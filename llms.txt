@@ -1,0 +1,37 @@
+# AION Veritas
+
+> Pre-open probability bands for Indian indices. Information, never instruction.
+
+AION Veritas publishes a daily pre-open probability band for NIFTY 50, BANK NIFTY,
+and SENSEX, by 08:55 IST, and validates it publicly the same afternoon against the
+09:15-09:25 median opening window. It reports a range and a separate directional
+lean. It is not a trade signal, not a price prediction, and not investment advice.
+Hits and misses are both published on a permanent, crawlable validation record.
+
+Stance: informs, never instructs — a guiding light, not a guiding hand. A range to
+position around, never a call to act.
+
+## Facts
+
+- Product: AION Veritas
+- Coverage: NIFTY 50, BANK NIFTY, SENSEX (index-level only)
+- Published: by 08:55 IST each trading day
+- Validated: same afternoon, against the 09:15-09:25 IST median opening window
+- Calibration: an 80% calibrated range; past calibration does not guarantee future
+  coverage
+- Access: paid subscription, no free tier (Single Index or All Indices)
+- Owner: AION Analytics (India), founded by Lokesh Gupta
+- Not affiliated with Aion Analytics LLC (US) or AION Labs (Israel)
+- Prediction methodology: proprietary and patent-adjacent, undisclosed
+
+## Canonical URLs
+
+- Product: https://dashboard.aiondashboard.site/veritas
+- Public validation receipts: https://dashboard.aiondashboard.site/veritas/validation
+- Technical model page: https://dashboard.aiondashboard.site/models/veritas
+
+## Disclaimer
+
+Educational and research purposes only. Not investment advice. AION is not a
+SEBI-registered RA or IA. Trading involves substantial risk. SEBI regulations apply.
+Past performance is not indicative of future results.
