@@ -1,5 +1,10 @@
 # AION Veritas — Pre-Open Probability Bands
 
+[![Live bands](https://img.shields.io/badge/live%20bands-dashboard-00D4FF)](https://dashboard.aiondashboard.site/veritas)
+[![Validation receipts](https://img.shields.io/badge/validation-receipts-4c9)](https://dashboard.aiondashboard.site/veritas/validation)
+[![Model spec](https://img.shields.io/badge/model-spec-888)](https://dashboard.aiondashboard.site/veritas-model-spec)
+[![Research](https://img.shields.io/badge/research-SSRN-orange)](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7415772)
+
 > A guiding light, not a guiding hand.
 
 AION Veritas is a daily pre-open probability band for **NIFTY 50**, **BANK NIFTY**,
