@@ -1,8 +1,8 @@
 # AION Veritas — Pre-Open Probability Bands
 
-[![Live bands](https://img.shields.io/badge/live%20bands-dashboard-00D4FF)](https://dashboard.aiondashboard.site/veritas)
-[![Validation receipts](https://img.shields.io/badge/validation-receipts-4c9)](https://dashboard.aiondashboard.site/veritas/validation)
-[![Model spec](https://img.shields.io/badge/model-spec-888)](https://dashboard.aiondashboard.site/veritas-model-spec)
+[![Live bands](https://img.shields.io/badge/live%20bands-dashboard-00D4FF)](https://aionanalytics.in/veritas)
+[![Validation receipts](https://img.shields.io/badge/validation-receipts-4c9)](https://aionanalytics.in/veritas/validation)
+[![Model spec](https://img.shields.io/badge/model-spec-888)](https://aionanalytics.in/veritas-model-spec)
 [![Research](https://img.shields.io/badge/research-SSRN-orange)](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7415772)
 
 > A guiding light, not a guiding hand.
@@ -88,18 +88,18 @@ a subscription.
 | Single Index | ₹499 / month | One index of your choice (NIFTY 50, BANK NIFTY, or SENSEX) |
 | All Indices | ₹1,999 / month | NIFTY 50 + BANK NIFTY + SENSEX |
 
-Subscribe: <https://dashboard.aiondashboard.site/veritas>
+Subscribe: <https://aionanalytics.in/veritas>
 
 ## Learn more
 
-- For deeper technical readers: <https://dashboard.aiondashboard.site/models/veritas>
-- Public validation receipts: <https://dashboard.aiondashboard.site/veritas/validation>
+- For deeper technical readers: <https://aionanalytics.in/models/veritas>
+- Public validation receipts: <https://aionanalytics.in/veritas/validation>
 
 ## Collaboration
 
 AION builds calibrated probabilistic models for Indian markets. For research or
 engineering collaboration, contact AION Analytics (India):
-<https://dashboard.aiondashboard.site/>
+<https://aionanalytics.in/>
 
 ## Identity
 
@@ -113,3 +113,10 @@ AION Analytics is not a SEBI-registered Research Analyst or Investment Adviser.
 Trading involves substantial risk. SEBI regulations apply. Past performance is not
 indicative of future results. 9 out of 10 retail traders lose money in options
 trading.
+
+## Website, maintainer and security contact
+
+- Website page: https://aionanalytics.in/veritas
+- Organisation: https://aionanalytics.in/ (AION Analytics, India)
+- Maintainer and security contact: contact@aionanalytics.in. Report a defect through GitHub issues; report a security concern by email, not in a public issue.
+- Company page: https://www.linkedin.com/company/aion-analytics-india/
