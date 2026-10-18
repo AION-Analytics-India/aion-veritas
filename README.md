@@ -113,3 +113,10 @@ AION Analytics is not a SEBI-registered Research Analyst or Investment Adviser.
 Trading involves substantial risk. SEBI regulations apply. Past performance is not
 indicative of future results. 9 out of 10 retail traders lose money in options
 trading.
+
+## Website, maintainer and security contact
+
+- Website page: https://aionanalytics.in/veritas
+- Organisation: https://aionanalytics.in/ (AION Analytics, India)
+- Maintainer and security contact: contact@aionanalytics.in. Report a defect through GitHub issues; report a security concern by email, not in a public issue.
+- Company page: https://www.linkedin.com/company/aion-analytics-india/
