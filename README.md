@@ -1,16 +1,22 @@
-# AION Veritas — Pre-Open Probability Bands
+# AION Veritas — NIFTY, BANK NIFTY & SENSEX Pre-Open Probability Bands
 
-[![Live bands](https://img.shields.io/badge/live%20bands-dashboard-00D4FF)](https://dashboard.aiondashboard.site/veritas)
-[![Validation receipts](https://img.shields.io/badge/validation-receipts-4c9)](https://dashboard.aiondashboard.site/veritas/validation)
-[![Model spec](https://img.shields.io/badge/model-spec-888)](https://dashboard.aiondashboard.site/veritas-model-spec)
+[![Live bands](https://img.shields.io/badge/live%20bands-dashboard-00D4FF)](https://aionanalytics.in/veritas)
+[![Validation receipts](https://img.shields.io/badge/validation-receipts-4c9)](https://aionanalytics.in/veritas/validation)
+[![Model spec](https://img.shields.io/badge/model-spec-888)](https://aionanalytics.in/models/veritas)
 [![Research](https://img.shields.io/badge/research-SSRN-orange)](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7415772)
 
 > A guiding light, not a guiding hand.
 
-AION Veritas is a daily pre-open probability band for **NIFTY 50**, **BANK NIFTY**,
-and **SENSEX**. Each trading day the band is published by **08:55 IST**, before the
-market opens, and validated publicly the same afternoon against the **09:15–09:25
-median opening window**. Every session is put on the record — hits and misses alike.
+AION Veritas produces daily pre-open probability bands for **NIFTY 50**, **BANK NIFTY**,
+and **SENSEX**. Bands are published by **08:55 IST**, ahead of the Indian market open.
+The forecast covers **09:15–09:30 IST**, the first 15 minutes of the session;
+historical receipts specify the exact scoring method used for each date. Results,
+including misses, are published publicly after validation.
+
+**Current access:** a [free 7-day NIFTY 50 trial](https://aionanalytics.in/veritas)
+(verified email and passkey; no card), or a paid single-/all-index subscription.
+Live pre-open bands require an eligible key; the [validation archive](https://aionanalytics.in/veritas/validation) is free to read.
+The [official GitHub publisher is AION-Analytics-India](https://github.com/AION-Analytics-India).
 
 Veritas informs; it does not instruct. It describes a range to reason around, not a
 call to act.
@@ -53,7 +59,7 @@ fields with placeholder values, not a live band and not a guarantee.
   "directional_lean": "BEARISH",
   "directional_confidence_pct": 49.4,
   "range_confidence": "low — band is primary",
-  "validation_window_ist": "09:15-09:25 median"
+  "forecast_window_ist": "09:15-09:30"
 }
 ```
 
@@ -79,32 +85,36 @@ Veritas is index-level. It does not publish sector-level or single-stock bands.
 
 ## Access
 
-Veritas is a paid subscription. There is no free tier. The public validation
-receipts are the proof layer, not a product preview; the live forward band requires
-a subscription.
+Veritas offers a **free 7-day NIFTY 50 trial key** with verified email and passkey,
+no card required. The trial lasts 168 hours from activation, including weekends and
+market holidays. After the trial, or for BANK NIFTY and SENSEX live bands, a paid
+subscription is required. The public validation receipts remain available to everyone.
 
 | Tier | Price | Coverage |
 | --- | --- | --- |
 | Single Index | ₹499 / month | One index of your choice (NIFTY 50, BANK NIFTY, or SENSEX) |
 | All Indices | ₹1,999 / month | NIFTY 50 + BANK NIFTY + SENSEX |
 
-Subscribe: <https://dashboard.aiondashboard.site/veritas>
+Start the NIFTY 50 trial or subscribe: <https://aionanalytics.in/veritas> ·
+Current plans and API access: <https://aionanalytics.in/apis>
 
 ## Learn more
 
-- For deeper technical readers: <https://dashboard.aiondashboard.site/models/veritas>
-- Public validation receipts: <https://dashboard.aiondashboard.site/veritas/validation>
+- For deeper technical readers: <https://aionanalytics.in/models/veritas>
+- Public validation receipts: <https://aionanalytics.in/veritas/validation>
 
 ## Collaboration
 
 AION builds calibrated probabilistic models for Indian markets. For research or
 engineering collaboration, contact AION Analytics (India):
-<https://dashboard.aiondashboard.site/>
+<https://aionanalytics.in/>
 
 ## Identity
 
-Founded by Lokesh Gupta. Not affiliated with Aion Analytics LLC (United States) or
-AION Labs (Israel).
+Published by **AION Analytics Private Limited (India)** through the official
+[GitHub organization](https://github.com/AION-Analytics-India), founded by Lokesh Gupta.
+[Official website](https://aionanalytics.in/) · [Product registry](https://aionanalytics.in/models).
+Not affiliated with Aion Analytics LLC (United States) or AION Labs (Israel).
 
 ## Disclaimer
 
