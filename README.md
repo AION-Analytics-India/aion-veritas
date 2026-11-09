@@ -63,9 +63,19 @@ The **8 November 2026 reconciliation** identified **104 linked historical receip
 - [How validation works](docs/validation.md)
 - [Public receipt archive](https://aionanalytics.in/veritas/validation)
 
-### Public example: 5 November 2026 (not a live band)
+### Dated public example: 5 November 2026 (not a live band)
 
-The [5 November 2026 validation receipt](https://aionanalytics.in/veritas/validation/2026-11-05) records **0 of 3 bands held** across NIFTY 50, BANK NIFTY and SENSEX. The published record includes misses rather than hiding them. This dated example predates the 5 November previous-close correction referenced in the subsequent operational audit; it is **not** evidence of current-method performance and should not be pooled with later cohorts without checking the methodology and input provenance. The example is a historical receipt, not a subscriber-visible current forecast.
+The [original public validation receipt for 5 November 2026](https://aionanalytics.in/veritas/validation/2026-11-05) records **0 of 3 ranges held**, under both its reported median-window test and its 10-of-15-minute test. It also reports **3 of 3 asserted directional assessments correct**. Range and direction are distinct outcomes; a correct direction did not prevent all three range misses.
+
+| Index | Published lower / upper band | First-window reference reported in receipt | Minutes inside band | Asserted direction and receipt result |
+| --- | --- | ---: | ---: | --- |
+| NIFTY 50 | 23,988.99 / 24,288.84 | 24,354.70 | 0/15 | BULLISH, correct |
+| BANK NIFTY | 55,393.68 / 56,275.54 | 56,914.45 | 0/15 | BULLISH, correct |
+| SENSEX | 77,314.07 / 78,272.66 | 78,722.76 | 0/15 | BULLISH, correct |
+
+The reference values above are the receipt's **09:15/09:20/09:25 median opening-window measures**, not closing prices or current quotes. The example predates the **5 November previous-close correction** documented by the forecaster audit. Its input provenance and applicable scoring rules must be considered before comparisons with newer cohorts. A single day, whether a miss or a hit, does **not** establish calibrated accuracy, comparative model quality, or a trading recommendation.
+
+[Hugging Face Veritas documentation card](https://huggingface.co/aion-analytics-india/aion-veritas) is a discovery surface; it does not host the proprietary forecasting model, live band endpoint, or downloadable validation dataset. The dated website receipt remains the source for the figures in this example.
 
 ## Coverage
 
