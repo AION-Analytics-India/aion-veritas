@@ -1,37 +1,32 @@
-# AION Veritas
+# AION Veritas | official public product description
 
-> Pre-open probability bands for Indian indices. Information, never instruction.
+> Pre-open probability intervals for Indian indices with separately dated validation receipts. Information, not a trade instruction.
 
-AION Veritas publishes a daily pre-open probability band for NIFTY 50, BANK NIFTY,
-and SENSEX, by 08:55 IST, and validates it publicly the same afternoon against the
-09:15-09:25 median opening window. It reports a range and a separate directional
-lean. It is not a trade signal, not a price prediction, and not investment advice.
-Hits and misses are both published on a permanent, crawlable validation record.
+**Publisher:** AION Analytics Private Limited (India). This GitHub repository contains public product documentation, not model weights, private code or a free real-time live-band API.
 
-Stance: informs, never instructs — a guiding light, not a guiding hand. A range to
-position around, never a call to act.
+## Product scope and dated evidence (8 November 2026)
 
-## Facts
+- Indices: NIFTY 50, BANK NIFTY, SENSEX; index-level, not single-stock bands.
+- Forecast horizon: the first cash-session window, nominally 09:15–09:30 IST.
+- Scheduler: **08:46** forecast generation, **08:47** relay, **08:50** readiness check and **09:31** post-window validation. These are job times, not guaranteed customer-delivery timestamps.
+- Coverage calibration: **80% design target**, not verified empirical coverage. Do not repeat previously claimed ~72% held rate or ~84% STRONG-direction accuracy as measured public-archive results without a reproducible like-for-like cohort.
+- Validation: public receipts include misses. At the 8 Nov audit there were **104 linked receipts**, including the previously unlinked 26 June file; a **56-calendar-date gap** ran from 24 July through 17 September, and scoring definitions changed around 13–14 October. Missing calendar dates are not all trading sessions.
+- Access: a seven-calendar-day NIFTY-only trial with verified email and passkey, no card; other-index or subsequent live-band access requires paid entitlement. Historical receipts are freely readable.
+- Historical API caveat: new historical API rows are not currently persisting pending an archival-only replacement. The public receipt files are separate. Authenticated API, signup and checkout were not retested in the 8 Nov review.
+- Research boundary: informational probability ranges, not price targets, execution instructions, investment advice, guaranteed accuracy or guaranteed returns.
+- Prediction methods: proprietary; feature weights, private thresholds and operational credentials are not disclosed.
 
-- Product: AION Veritas
-- Coverage: NIFTY 50, BANK NIFTY, SENSEX (index-level only)
-- Published: by 08:55 IST each trading day
-- Validated: same afternoon, against the 09:15-09:25 IST median opening window
-- Calibration: an 80% calibrated range; past calibration does not guarantee future
-  coverage
-- Access: paid subscription, no free tier (Single Index or All Indices)
-- Owner: AION Analytics (India), founded by Lokesh Gupta
-- Not affiliated with Aion Analytics LLC (US) or AION Labs (Israel)
-- Prediction methodology: proprietary and patent-adjacent, undisclosed
+## Canonical public URLs
 
-## Canonical URLs
+- GitHub: https://github.com/AION-Analytics-India/aion-veritas
+- Product / access: https://aionanalytics.in/veritas
+- Model page: https://aionanalytics.in/models/veritas
+- Model specification: https://aionanalytics.in/veritas-model-spec
+- Dated validation receipts: https://aionanalytics.in/veritas/validation
+- Publisher: https://aionanalytics.in/
 
-- Product: https://dashboard.aiondashboard.site/veritas
-- Public validation receipts: https://dashboard.aiondashboard.site/veritas/validation
-- Technical model page: https://dashboard.aiondashboard.site/models/veritas
+## Website synchronization
 
-## Disclaimer
+The 8 November agent checkpoint reported that revised Veritas website pages were **staged but not yet deployed**. Some public pages may still carry the obsolete 08:55 publication wording, 80%-as-achieved language or historical methodology claims. A GitHub documentation correction is not proof of website deployment.
 
-Educational and research purposes only. Not investment advice. AION is not a
-SEBI-registered RA or IA. Trading involves substantial risk. SEBI regulations apply.
-Past performance is not indicative of future results.
+**Disclaimer:** Educational and research purposes only. AION Analytics is not a SEBI-registered Research Analyst or Investment Adviser. Trading involves substantial risk. Past outcomes are not a guarantee of future results.
