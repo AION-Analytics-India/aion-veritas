@@ -1,53 +1,40 @@
-# How to read a band
+# How to read a Veritas band
 
-This is a conceptual guide to interpreting a Veritas output. It describes what the
-fields mean — not how they are produced.
+This is a guide to **field interpretation**, not an API schema or disclosure of the private forecasting algorithm. A Veritas band concerns opening-window uncertainty for NIFTY 50, BANK NIFTY or SENSEX.
 
-## The band
+## Lower and upper bounds
 
-Veritas publishes a **range** for the opening window: a lower band and an upper band.
-The band edges are the boundaries of the expected opening range. They are reference
-points for where the range of expected outcomes runs out — not targets, and not
-levels to act on.
+These are bounds of a pre-open probability interval. They are **not** entry prices, exit targets, stop-losses or a recommendation. The calibration design targets **80% coverage**; that target is not proof that four out of five recent bands actually held.
 
-Most sessions, the open lands somewhere inside the band. When the open lands outside,
-the band is recorded as a miss on the public validation receipt.
+## Centre versus arithmetic midpoint
 
-## The midpoint
+The arithmetic midpoint is the average of the lower and upper bounds. The separately reported **model centre** need not equal that arithmetic midpoint. The centre interpretation was revised in October 2026, so consult the dated output and method version.
 
-The midpoint is the centre of the range. It is a central reference, not a prediction
-of a single price and not a target.
+## Direction and confidence
 
-## The directional lean
+Direction and range are evaluated independently. A weak or neutral directional assessment communicates uncertainty, not a buy/sell instruction. A range-confidence field and directional-confidence or reliability field need not have the same definition. Neither implies guaranteed market performance.
 
-Alongside the band, Veritas may report a directional lean with a confidence figure.
-This is a lean, never a call to act. The lean and the range are judged separately.
-
-## Range confidence
-
-Range confidence describes how concentrated the expected range is for that session.
-When confidence is low, the model says so. On low-confidence days the band is the
-primary read; the directional lean carries little weight. A wide band with honest
-confidence is more useful than a narrow band that hides uncertainty.
-
-## The lifecycle of a band
+## Operational lifecycle (nominal IST times)
 
 ```mermaid
 flowchart LR
-    A[Before the open:<br/>band published by 08:55 IST] --> B{Where does the open land?<br/>09:15-09:25 median window}
-    B -->|inside the band| C[HELD]
-    B -->|outside the band| D[BROKE]
-    C --> E[Published as a validation receipt<br/>hits and misses, same afternoon]
-    D --> E
-    A --> F[Directional lean:<br/>reported separately,<br/>strong or weak]
+  A[08:46 Generate forecast] --> B[08:47 Relay]
+  B --> C[08:50 Readiness check]
+  C --> D[09:15 to 09:30 Opening window]
+  D --> E[09:31 Validation job]
+  E --> F[Public receipt when published]
 ```
 
-## In short
+Scheduled timing is **not a service-level guarantee** and does not establish that a receipt exists for every date. The observed validation rule changed around **13–14 October 2026**; compare historical outcomes within their correct method cohorts.
 
-- Read the **band** as the boundaries of the expected opening range.
-- Read the **midpoint** as the centre, not a target.
-- Read the **directional lean** as a separate, honestly-graded read.
-- When confidence is **low**, lean on the range.
+The **8 November 2026 audit** found **104 linked receipts** and a gap of **56 calendar dates between 24 July and 17 September inclusive**, including non-trading days.
 
-For the public record of how bands have held up, see
-[`validation.md`](validation.md).
+## Access and limitations
+
+- Published terms provide a **seven-calendar-day NIFTY-only trial**, with verified email and passkey, no card.
+- BANK NIFTY, SENSEX or access after trial require eligible paid entitlement.
+- Existing historical receipts can be read publicly; a missing date is neither an automatic hit nor an automatic miss.
+- New **historical API** rows are not currently accumulating pending a separate archival-only repair; that is distinct from the public receipt archive.
+- The latest audit did not retest authenticated API access, signup or checkout.
+
+Read the [validation guide](validation.md), [product access page](https://aionanalytics.in/veritas) and [public receipt archive](https://aionanalytics.in/veritas/validation).
