@@ -7,11 +7,9 @@
 
 > A guiding light, not a guiding hand.
 
-AION Veritas produces daily pre-open probability bands for **NIFTY 50**, **BANK NIFTY**,
-and **SENSEX**. Bands are published by **08:55 IST**, ahead of the Indian market open.
-The forecast covers **09:15–09:30 IST**, the first 15 minutes of the session;
-historical receipts specify the exact scoring method used for each date. Results,
-including misses, are published publicly after validation.
+AION Veritas prepares pre-open probability bands for **NIFTY 50**, **BANK NIFTY**, and **SENSEX**. According to the **8 November 2026 scheduler audit**, the forecast is generated at **08:46 IST**, relayed at **08:47**, and checked for readiness at **08:50**; the opening-window validator runs at **09:31 IST**. These are scheduled steps, not proof of successful delivery on every trading date.
+
+The forecast concerns the **09:15–09:30 IST opening window**, not the closing price. Public receipts document available post-session outcomes, including misses. The historical archive has publication gaps and scoring-method revisions; a single unqualified historical hit rate would be misleading.
 
 **Current access:** a [free 7-day NIFTY 50 trial](https://aionanalytics.in/veritas)
 (verified email and passkey; no card), or a paid single-/all-index subscription.
@@ -23,12 +21,10 @@ call to act.
 
 ## What Veritas is
 
-- A daily probability band published before the Indian market opens.
-- An 80% calibrated range — the actual open should land inside roughly 8 times out
-  of 10. Past calibration does not guarantee future coverage.
-- A directional lean, stated only when the model has enough conviction to assert one.
-- A post-market validation receipt the same afternoon — hits and misses both on the
-  public record.
+- A pre-open probability band for index-level opening-window uncertainty, subject to successful daily production and entitlement.
+- An **80% design coverage target**, not an achieved coverage rate; observed performance requires dated, reproducible numerators and denominators.
+- A directional assessment and reliability indication, interpreted according to the method version in use.
+- Public post-session receipts for recorded dates, including misses and documented publication gaps.
 
 ## What Veritas is not
 
@@ -38,40 +34,34 @@ call to act.
 - Not infallible. Misses are published publicly — that is the design, not a
   disclaimer.
 
-## What a Veritas output looks like
+## What a Veritas output conveys
 
-Published every trading day before 08:55 IST. Each index carries a lower band, an
-upper band, a midpoint, a directional lean with a confidence figure, and a range
-confidence. When confidence is low, the model says so — a wide band with honest
-confidence is more useful than a narrow band that hides uncertainty.
+A dated band may include a lower bound, upper bound, reported centre, directional assessment, direction reliability, and range confidence. The **reported model centre must not automatically be treated as the arithmetic midpoint**: field definitions and scoring rules changed during October 2026.
 
-The following is an **illustrative example of the output shape only** — labelled
-fields with placeholder values, not a live band and not a guarantee.
+| Conceptual field | Meaning | Boundary |
+| --- | --- | --- |
+| Lower / upper band | Bounds of the forecast opening-window interval | Not buy/sell levels or a price target |
+| Reported centre | Reference point defined by that method version | May differ from the arithmetic midpoint |
+| Direction and reliability | Separate directional assessment that can signal uncertainty | Not a trade instruction or guaranteed result |
+| Validation result | Outcome under the dated receipt's scoring contract | Compare only properly matched methodology cohorts |
 
-```json
-{
-  "index": "NIFTY 50",
-  "session_date": "YYYY-MM-DD",
-  "published_ist": "08:55",
-  "lower_band": 23919.04,
-  "upper_band": 24137.69,
-  "midpoint": 24028.37,
-  "directional_lean": "BEARISH",
-  "directional_confidence_pct": 49.4,
-  "range_confidence": "low — band is primary",
-  "forecast_window_ist": "09:15-09:30"
-}
-```
+This is a **conceptual field guide**, not an exact machine-readable API schema or a live subscriber band. For actual fields, consult the dated receipt or authorized service output.
 
 ## How it is scored
 
-Range and direction are scored **separately**. The band is the primary product; the
-directional lean is reported honestly beside it, including on days when conviction is
-weak. Every session — including the ones where the band missed — is published as a
-permanent, crawlable **validation receipt** that you can read before you subscribe.
+Range and direction are evaluated separately. The current validation job is scheduled for **09:31 IST**, after the opening window. It is not the forecast-publication time.
 
-- How to read a band: [`docs/how-to-read-a-band.md`](docs/how-to-read-a-band.md)
-- How validation works: [`docs/validation.md`](docs/validation.md)
+Historical receipt contracts are not uniform. A **13 October 2026** revision affected the reported centre and direction interpretation, and a **14 October** revision changed first-window scoring. Do not pool legacy and newer outcomes into a headline hit rate without reproducible cohort definitions and denominators.
+
+The **80% coverage figure is a design target**, not a measured success rate. Earlier claims of approximately **72% live coverage** or **84% STRONG-direction accuracy** have not been reproduced across comparable public receipt cohorts in the 8 November audit; no such performance claim is asserted here.
+
+The **8 November 2026 reconciliation** identified **104 linked historical receipts**, including a previously unlinked 26 June file. It identified **56 missing calendar dates from 24 July through 17 September**, which includes non-trading days and must not be described as 56 missing trading sessions. Of the linked receipts, **66 have Day labels and 38 do not**.
+
+**Operational limitation:** new historical API rows are not accumulating pending approval of an archival-only replacement. The current-session API still uses the 08:46 forecast snapshot. This is distinct from existing public validation receipts. Authenticated API access, signup and checkout were **not retested** in the audit.
+
+- [How to read a band](docs/how-to-read-a-band.md)
+- [How validation works](docs/validation.md)
+- [Public receipt archive](https://aionanalytics.in/veritas/validation)
 
 ## Coverage
 
@@ -105,7 +95,7 @@ Current plans and API access: <https://aionanalytics.in/apis>
 
 ## Collaboration
 
-AION builds calibrated probabilistic models for Indian markets. For research or
+AION builds research-led probabilistic information systems for Indian markets. For research or
 engineering collaboration, contact AION Analytics (India):
 <https://aionanalytics.in/>
 
@@ -115,6 +105,8 @@ Published by **AION Analytics Private Limited (India)** through the official
 [GitHub organization](https://github.com/AION-Analytics-India), founded by Lokesh Gupta.
 [Official website](https://aionanalytics.in/) · [Product registry](https://aionanalytics.in/models).
 Not affiliated with Aion Analytics LLC (United States) or AION Labs (Israel).
+
+**Website synchronization note (8 November 2026):** the Veritas website-copy corrections were still staged at the agent's checkpoint. Live website pages may carry older schedule and performance wording until their separate release is approved and independently verified.
 
 ## Disclaimer
 
