@@ -1,46 +1,35 @@
-# Validation
+# Veritas validation and receipt coverage
 
-Veritas is published with its own scorecard. Every output — including sessions where
-the band missed — is published as a permanent, crawlable **validation receipt**. You
-can read the full record before you subscribe.
+Veritas publishes **post-session validation receipts** for recorded sessions, including misses. The archive is an audit trail but not a complete, method-identical daily time series. Live current-day bands require an eligible trial or subscription.
 
-Public receipts: <https://dashboard.aiondashboard.site/veritas/validation>
+Public archive: <https://aionanalytics.in/veritas/validation>
 
-## What a validation receipt contains
+## What a receipt documents
 
-A receipt records, for a given trading day and index:
+A dated receipt can record the pre-open lower/upper band, the reported centre, direction and reliability, observed opening-window data, and separately scored range and direction outcomes. Read exact fields and judging rules from the dated receipt or its method version rather than assuming a universal definition.
 
-- The band that was published before the open (lower, upper, midpoint).
-- The directional lean that was published, and its confidence.
-- What actually happened in the opening window.
-- Whether the band **held** or **broke**, and whether the directional lean was
-  correct — scored **separately**.
+The **8 November 2026 audit** identified **104 linked receipt files**, including the previously unlinked **26 June 2026** file. **66** linked receipts carry Day labels and **38** do not. Day labels are not the authoritative receipt count or number of eligible sessions.
 
-Hits and misses are both on the record. A published miss is part of the design, not a
-disclaimer.
+The archive has **56 missing calendar dates from 24 July through 17 September 2026**, between the 23 July and 18 September receipts. This count **includes non-trading days**; it is not 56 missed trading sessions.
 
-## How a hit or miss is judged (public)
+## Scheduling and method changes
 
-The **validation methodology is public**. A session is judged against the
-**09:15–09:25 IST median opening window**:
+According to the 8 November scheduler audit: the forecast is generated at **08:46 IST**, relayed at **08:47**, checked for readiness at **08:50**, and the opening-window validation job runs at **09:31**. These are scheduled operations, not a guarantee of delivery or a complete daily receipt archive.
 
-- **Range:** the band held if the opening-window median fell inside the published
-  lower–upper band; otherwise it broke.
-- **Direction:** the directional lean is graded on its own, independent of whether the
-  band held.
+The forecast refers to the **09:15–09:30 IST opening window**. Validation criteria changed over time. The **13 October 2026** revision affected centre/direction interpretation and the **14 October** revision changed first-window candle scoring. Historical comparisons must separate incompatible cohorts, identify exact observation windows, and report dated numerators, denominators and exclusions; archived receipts must not be silently rescored.
 
-Because range and direction are judged separately, a session can hold its band while
-the directional lean was weak or wrong, or vice versa. Both facts are shown.
+The **80% interval-coverage figure is a design target**, not verified live coverage. Earlier approximately **72% coverage** and **84% STRONG directional accuracy** claims were not reproducible over a single comparable public cohort in the 8 November audit. They should not be represented as established results.
 
-## What is not disclosed (private)
+## Current-session versus historical API
 
-The **prediction methodology is proprietary and patent-adjacent, and is not
-disclosed**. This documentation covers only how outputs are validated and read — not
-how they are produced. No features, calibration, model details, thresholds, or data
-are published here or anywhere public.
+The current-date API reads the 08:46 forecast snapshot. New historical API rows are **not presently accumulating** pending an archival-only replacement. This database persistence gap is separate from the existing public receipt files. The 8 November audit did **not** test authenticated API access, signup or checkout.
 
-## Why publish misses
+## How to interpret a validation result
 
-Evidence first; re-validate always. A model that publishes its failures can be
-checked. The validation receipts are the proof layer — read them before deciding
-whether Veritas is useful to you.
+- A generated forecast, successful relay, user-visible band, scored outcome and public receipt are separate states.
+- Preserve misses, missing sessions, method revisions and publication gaps in any quantitative assessment.
+- Score interval coverage and directional correctness separately; a weak or neutral direction does not establish a trade signal.
+- Compare like-for-like date and index cohorts; do not silently pool incompatible scoring methods.
+- No empirical accuracy or investment-return guarantee is asserted.
+
+The prediction implementation remains proprietary; this public documentation describes the evidence boundary, not private feature weights, thresholds, credentials or model code. Research information only; **not investment advice**.
