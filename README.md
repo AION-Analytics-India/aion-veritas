@@ -53,7 +53,7 @@ Range and direction are evaluated separately. The current validation job is sche
 
 Historical receipt contracts are not uniform. A **13 October 2026** revision affected the reported centre and direction interpretation, and a **14 October** revision changed first-window scoring. Do not pool legacy and newer outcomes into a headline hit rate without reproducible cohort definitions and denominators.
 
-The **80% coverage figure is a design target**, not a measured success rate. Earlier claims of approximately **72% live coverage** or **84% STRONG-direction accuracy** have not been reproduced across comparable public receipt cohorts in the 8 November audit; no such performance claim is asserted here.
+The **80% coverage figure is a design target**, not a measured success rate. Earlier headline performance percentages were withdrawn pending reproducible, method-consistent cohort evidence; no measured accuracy rate is asserted here.
 
 The **8 November 2026 reconciliation** identified **104 linked historical receipts**, including a previously unlinked 26 June file. It identified **56 missing calendar dates from 24 July through 17 September**, which includes non-trading days and must not be described as 56 missing trading sessions. Of the linked receipts, **66 have Day labels and 38 do not**.
 
@@ -62,6 +62,10 @@ The **8 November 2026 reconciliation** identified **104 linked historical receip
 - [How to read a band](docs/how-to-read-a-band.md)
 - [How validation works](docs/validation.md)
 - [Public receipt archive](https://aionanalytics.in/veritas/validation)
+
+### Public example: 5 November 2026 (not a live band)
+
+The [5 November 2026 validation receipt](https://aionanalytics.in/veritas/validation/2026-11-05) records **0 of 3 bands held** across NIFTY 50, BANK NIFTY and SENSEX. The published record includes misses rather than hiding them. This dated example predates the 5 November previous-close correction referenced in the subsequent operational audit; it is **not** evidence of current-method performance and should not be pooled with later cohorts without checking the methodology and input provenance. The example is a historical receipt, not a subscriber-visible current forecast.
 
 ## Coverage
 
@@ -80,13 +84,7 @@ no card required. The trial lasts 168 hours from activation, including weekends 
 market holidays. After the trial, or for BANK NIFTY and SENSEX live bands, a paid
 subscription is required. The public validation receipts remain available to everyone.
 
-| Tier | Price | Coverage |
-| --- | --- | --- |
-| Single Index | ₹499 / month | One index of your choice (NIFTY 50, BANK NIFTY, or SENSEX) |
-| All Indices | ₹1,999 / month | NIFTY 50 + BANK NIFTY + SENSEX |
-
-Start the NIFTY 50 trial or subscribe: <https://aionanalytics.in/veritas> ·
-Current plans and API access: <https://aionanalytics.in/apis>
+For current plan prices, eligible indices and API conditions, consult the [live Veritas access page](https://aionanalytics.in/veritas) and [API catalogue](https://aionanalytics.in/apis). Billing terms are intentionally not duplicated in this documentation; the verified product catalogue is authoritative.
 
 ## Learn more
 
@@ -113,5 +111,4 @@ Not affiliated with Aion Analytics LLC (United States) or AION Labs (Israel).
 Content is for educational and research purposes only. It is not investment advice.
 AION Analytics is not a SEBI-registered Research Analyst or Investment Adviser.
 Trading involves substantial risk. SEBI regulations apply. Past performance is not
-indicative of future results. 9 out of 10 retail traders lose money in options
-trading.
+indicative of future results.
