@@ -1,4 +1,4 @@
-# AION Veritas — NIFTY, BANK NIFTY & SENSEX Pre-Open Probability Bands
+# AION Veritas  -  NIFTY, BANK NIFTY & SENSEX Pre-Open Probability Bands
 
 [![Live bands](https://img.shields.io/badge/live%20bands-dashboard-00D4FF)](https://aionanalytics.in/veritas)
 [![Validation receipts](https://img.shields.io/badge/validation-receipts-4c9)](https://aionanalytics.in/veritas/validation)
@@ -9,7 +9,7 @@
 
 AION Veritas prepares pre-open probability bands for **NIFTY 50**, **BANK NIFTY**, and **SENSEX**. According to the **8 November 2026 scheduler audit**, the forecast is generated at **08:46 IST**, relayed at **08:47**, and checked for readiness at **08:50**; the opening-window validator runs at **09:31 IST**. These are scheduled steps, not proof of successful delivery on every trading date.
 
-The forecast concerns the **09:15–09:30 IST opening window**, not the closing price. Public receipts document available post-session outcomes, including misses. The historical archive has publication gaps and scoring-method revisions; a single unqualified historical hit rate would be misleading.
+The forecast concerns the **09:15 - 09:30 IST opening window**, not the closing price. Public receipts document available post-session outcomes, including misses. The historical archive has publication gaps and scoring-method revisions; a single unqualified historical hit rate would be misleading.
 
 **Current access:** a [free 7-day NIFTY 50 trial](https://aionanalytics.in/veritas)
 (verified email and passkey; no card), or a paid single-/all-index subscription.
@@ -18,6 +18,20 @@ The [official GitHub publisher is AION-Analytics-India](https://github.com/AION-
 
 Veritas informs; it does not instruct. It describes a range to reason around, not a
 call to act.
+
+## Public reporting changes - 14 November 2026
+
+The [updated Veritas model page](https://aionanalytics.in/models/veritas) presents a rolling display of the **last 30 completed trading sessions**, filtered by index. It retrieves validation records dynamically. The static model-page HTML is not itself evidence of any current numeric hit rate or a verified post-calibration cohort.
+
+- **Reference-price hit:** A specified opening-window reference falls inside the published band. It does not establish that the complete 09:15-09:30 range remained within the band.
+- **Full-range containment:** Current rolling receipts do not provide the full-window low/high required for this test, so the website marks it **Not measured**. The [historical containment study](https://aionanalytics.in/veritas/historical.html#containment) is a separate dated evaluation.
+- **Other outcomes:** Asserted BULLISH/BEARISH direction, NEUTRAL outcomes and minute-test results have separate denominators. Missing and unverified receipts remain visible and are not silently counted as misses.
+- **Historical correction:** A 13 November 2026 eligibility correction preserves superseded and corrected results in the [historical audit](https://aionanalytics.in/veritas/historical.html#correction).
+- **October change:** A band-serving configuration change was promoted for NIFTY 50 and SENSEX on 11 October following a short shadow comparison. BANK NIFTY was not promoted. The website does not describe this as model retraining or fine-tuning, and no common verified post-calibration cutoff has been established. Small historical comparisons do not establish future performance.
+- **Publication target:** Before 08:55 IST. A target is not proof that each session was published on time.
+- **Advertised access on this page:** Free seven-day NIFTY 50 trial; INR 499/month for one index; INR 1,999/month for all three, subject to the current plan catalogue.
+
+The rolling reference-price test, historical full-range containment audit and post-change results must remain distinct. This repository describes public capabilities and evidence limitations, not proprietary forecasting implementation.
 
 ## What Veritas is
 
@@ -31,7 +45,7 @@ call to act.
 - Not a trade signal. It does not say buy or sell.
 - Not a price prediction. It gives a range, not a point.
 - Not investment advice. AION is not a SEBI-registered RA or IA.
-- Not infallible. Misses are published publicly — that is the design, not a
+- Not infallible. Misses are published publicly  -  that is the design, not a
   disclaimer.
 
 ## What a Veritas output conveys
@@ -57,7 +71,7 @@ The **80% coverage figure is a design target**, not a measured success rate. Ear
 
 The **8 November 2026 reconciliation** identified **104 linked historical receipts**, including a previously unlinked 26 June file. It identified **56 missing calendar dates from 24 July through 17 September**, which includes non-trading days and must not be described as 56 missing trading sessions. Of the linked receipts, **66 have Day labels and 38 do not**.
 
-**Operational limitation:** new historical API rows are not accumulating pending approval of an archival-only replacement. The current-session API still uses the 08:46 forecast snapshot. This is distinct from existing public validation receipts. Authenticated API access, signup and checkout were **not retested** in the audit.
+**Dated operational limitation (8 November audit):** New historical API rows were not accumulating at that checkpoint pending an archival-only replacement. The current-session API used the 08:46 forecast snapshot. Existing public receipt files are separate. The uploaded 14 November model page does not establish whether historical API persistence has since been repaired. Authenticated API access, signup and checkout were not retested in the 8 November audit.
 
 - [How to read a band](docs/how-to-read-a-band.md)
 - [How validation works](docs/validation.md)
@@ -114,7 +128,7 @@ Published by **AION Analytics Private Limited (India)** through the official
 [Official website](https://aionanalytics.in/) · [Product registry](https://aionanalytics.in/models).
 Not affiliated with Aion Analytics LLC (United States) or AION Labs (Israel).
 
-**Website synchronization note (8 November 2026):** the Veritas website-copy corrections were still staged at the agent's checkpoint. Live website pages may carry older schedule and performance wording until their separate release is approved and independently verified.
+**Website documentation comparison (14 November 2026):** The supplied model-page HTML carries revision `veritas-model-20261114-october-shadow`, including a rolling 30-session scorecard, distinct performance tests and a historical eligibility correction. This supersedes the 8 November staged-copy warning for this reviewed page. Dynamic rates and receipt completeness require separate data readback.
 
 ## Disclaimer
 
