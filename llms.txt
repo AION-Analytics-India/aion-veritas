@@ -7,14 +7,24 @@
 ## Product scope and dated evidence (8 November 2026)
 
 - Indices: NIFTY 50, BANK NIFTY, SENSEX; index-level, not single-stock bands.
-- Forecast horizon: the first cash-session window, nominally 09:15–09:30 IST.
+- Forecast horizon: the first cash-session window, nominally 09:15 - 09:30 IST.
 - Scheduler: **08:46** forecast generation, **08:47** relay, **08:50** readiness check and **09:31** post-window validation. These are job times, not guaranteed customer-delivery timestamps.
 - Coverage calibration: **80% design target**, not verified empirical coverage. Do not repeat previously claimed ~72% held rate or ~84% STRONG-direction accuracy as measured public-archive results without a reproducible like-for-like cohort.
-- Validation: public receipts include misses. At the 8 Nov audit there were **104 linked receipts**, including the previously unlinked 26 June file; a **56-calendar-date gap** ran from 24 July through 17 September, and scoring definitions changed around 13–14 October. Missing calendar dates are not all trading sessions.
+- Validation: public receipts include misses. At the 8 Nov audit there were **104 linked receipts**, including the previously unlinked 26 June file; a **56-calendar-date gap** ran from 24 July through 17 September, and scoring definitions changed around 13 - 14 October. Missing calendar dates are not all trading sessions.
 - Access: a seven-calendar-day NIFTY-only trial with verified email and passkey, no card; other-index or subsequent live-band access requires paid entitlement. Historical receipts are freely readable.
-- Historical API caveat: new historical API rows are not currently persisting pending an archival-only replacement. The public receipt files are separate. Authenticated API, signup and checkout were not retested in the 8 Nov review.
+- Dated historical API caveat: new historical API rows were not persisting at the 8 Nov review. The uploaded 14 Nov model page does not establish later repair. Existing public receipt files are separate. Authenticated API, signup and checkout were not retested in that earlier review.
 - Research boundary: informational probability ranges, not price targets, execution instructions, investment advice, guaranteed accuracy or guaranteed returns.
 - Prediction methods: proprietary; feature weights, private thresholds and operational credentials are not disclosed.
+
+## Current public reporting - 14 November 2026
+
+The Veritas model page presents a dynamically populated rolling display of the last 30 completed trading sessions. Reference-price hit rates, asserted directional outcomes, neutral outcomes and minute-test results are distinct measures with separate eligible denominators. Missing and unverified outcomes are reported separately and are not counted as scored misses. A reference-price hit is not complete 09:15-09:30 range containment; the current rolling receipts lack the full-window low/high required for that test, which is therefore marked Not measured. The full-range historical audit is a separate dated study.
+
+The 13 November 2026 historical audit corrected eligibility counts while preserving superseded figures. The 11 October band-serving promotion affected NIFTY 50 and SENSEX, not BANK NIFTY; it was not identified as model fine-tuning or retraining. Five-session shadow comparisons are not established future accuracy, and no verified common post-calibration cutoff is available. Publication before 08:55 IST is a target, not a guarantee. The 14 November page shows a seven-day free NIFTY 50 trial and paid plans at INR 499/month for one index or INR 1,999/month for all three, subject to current terms.
+
+Live model page: https://aionanalytics.in/models/veritas
+Historical audit: https://aionanalytics.in/veritas/historical.html
+Public rolling validation endpoint: https://aionanalytics.in/api/v1/veritas/validation?limit=30
 
 ## Canonical public URLs
 
@@ -27,6 +37,6 @@
 
 ## Website synchronization
 
-The 8 November agent checkpoint reported that revised Veritas website pages were **staged but not yet deployed**. Some public pages may still carry the obsolete 08:55 publication wording, 80%-as-achieved language or historical methodology claims. A GitHub documentation correction is not proof of website deployment.
+The supplied 14 November model-page HTML supersedes the earlier staging-only note for this page. It includes a rolling 30-session scorecard and dated historical correction links. The 08:55 publication time is explicitly a target, and 80% is not advertised as demonstrated full-range containment.
 
 **Disclaimer:** Educational and research purposes only. AION Analytics is not a SEBI-registered Research Analyst or Investment Adviser. Trading involves substantial risk. Past outcomes are not a guarantee of future results.
