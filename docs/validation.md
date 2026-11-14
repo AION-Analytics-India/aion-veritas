@@ -4,6 +4,21 @@ Veritas publishes **post-session validation receipts** for recorded sessions, in
 
 Public archive: <https://aionanalytics.in/veritas/validation>
 
+## Rolling scorecard and historical audit - 14 November 2026
+
+The [current model page](https://aionanalytics.in/models/veritas) loads up to 30 completed trading sessions per selected index from the public receipt feed. A dynamically displayed rolling sample is not a post-calibration or independently validated accuracy cohort.
+
+Keep the tests distinct:
+- Reference-price inside the predicted band, which is **not** whole-window range containment
+- Asserted directional outcomes for BULLISH and BEARISH calls
+- NEUTRAL outcomes with their own eligibility
+- Receipt-specific minute-test results, not full-range containment
+- Missing, unverified and published-but-unscored results, excluded from scored denominators
+
+The current rolling receipts do not provide the opening-window low/high needed for full-range containment, so that test is labelled **Not measured**. The [separate historical containment audit](https://aionanalytics.in/veritas/historical.html#containment) preserves its own definitions. A [13 November correction](https://aionanalytics.in/veritas/historical.html#correction) preserves superseded results alongside corrected eligibility counts.
+
+The October 2026 NIFTY 50 and SENSEX configuration change followed a short shadow comparison. BANK NIFTY was not promoted. This is not evidence of retraining, a verified common calibration cutoff, or guaranteed future out-of-sample performance.
+
 ## What a receipt documents
 
 A dated receipt can record the pre-open lower/upper band, the reported centre, direction and reliability, observed opening-window data, and separately scored range and direction outcomes. Read exact fields and judging rules from the dated receipt or its method version rather than assuming a universal definition.
@@ -16,13 +31,13 @@ The archive has **56 missing calendar dates from 24 July through 17 September 20
 
 According to the 8 November scheduler audit: the forecast is generated at **08:46 IST**, relayed at **08:47**, checked for readiness at **08:50**, and the opening-window validation job runs at **09:31**. These are scheduled operations, not a guarantee of delivery or a complete daily receipt archive.
 
-The forecast refers to the **09:15–09:30 IST opening window**. Validation criteria changed over time. The **13 October 2026** revision affected centre/direction interpretation and the **14 October** revision changed first-window candle scoring. Historical comparisons must separate incompatible cohorts, identify exact observation windows, and report dated numerators, denominators and exclusions; archived receipts must not be silently rescored.
+The forecast refers to the **09:15 - 09:30 IST opening window**. Validation criteria changed over time. The **13 October 2026** revision affected centre/direction interpretation and the **14 October** revision changed first-window candle scoring. Historical comparisons must separate incompatible cohorts, identify exact observation windows, and report dated numerators, denominators and exclusions; archived receipts must not be silently rescored.
 
 The **80% interval-coverage figure is a design target**, not verified live coverage. Earlier approximately **72% coverage** and **84% STRONG directional accuracy** claims were not reproducible over a single comparable public cohort in the 8 November audit. They should not be represented as established results.
 
 ## Current-session versus historical API
 
-The current-date API reads the 08:46 forecast snapshot. New historical API rows are **not presently accumulating** pending an archival-only replacement. This database persistence gap is separate from the existing public receipt files. The 8 November audit did **not** test authenticated API access, signup or checkout.
+The current-date API reads the 08:46 forecast snapshot. At the **8 November audit**, new historical API rows were **not accumulating**, pending an archival-only replacement. The uploaded 14 November model-page HTML does not establish whether that persistence gap was subsequently resolved. Existing public receipt files are separate. The 8 November audit did **not** test authenticated API access, signup or checkout.
 
 ## How to interpret a validation result
 
